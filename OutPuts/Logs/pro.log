@@ -1,0 +1,164 @@
+2021-07-05 18:17:52,190 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 63, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-05 18:23:00,435 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 63, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-06 09:08:21,328 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 64, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-06 17:09:26,649 : operateMysql.py : ERROR : sahqingkuang
+2021-07-06 17:59:31,895 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 65, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-07 16:16:19,706 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 64, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 09:39:58,448 : getVerificationCode.py : INFO : 已定位验证码
+2021-07-12 09:39:58,465 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 09:39:58,546 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 09:39:59,198 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 09:42:04,966 : getVerificationCode.py : INFO : 已定位验证码
+2021-07-12 09:42:04,982 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 09:42:05,060 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 09:42:05,247 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 09:45:19,543 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 71, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 09:45:19,543 : getLog.py : ERROR : can't multiply sequence by non-int of type 'str'
+2021-07-12 09:45:41,609 : getLog.py : ERROR : can't multiply sequence by non-int of type 'str'
+2021-07-12 09:46:19,067 : getLog.py : ERROR : can't multiply sequence by non-int of type 'str'
+2021-07-12 09:47:15,672 : getLog.py : ERROR : can't multiply sequence by non-int of type 'str'
+2021-07-12 10:06:35,832 : getLog.py : ERROR : can't multiply sequence by non-int of type 'str'
+2021-07-12 10:09:52,779 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 10:11:21,300 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 10:11:41,750 : getLog.py : DEBUG : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 10:12:10,771 : getLog.py : INFO : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 10:12:44,150 : getLog.py : WARNING : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 10:14:38,514 : getLog.py : INFO : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 10:18:05,293 : getLog.py : INFO : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-12 10:18:35,506 : getLog.py : INFO : traceback.format_exc()
+2021-07-12 10:22:02,539 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:22:02,539 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:22:03,169 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:22:03,169 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:22:03,169 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:22:03,169 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:23:02,771 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:23:02,771 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:23:02,771 : getVerificationCode.py : INFO : waawwaaw
+2021-07-12 10:23:02,771 : getVerificationCode.py : INFO : waawwaaw
+2021-07-12 10:23:03,431 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:23:03,431 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:23:03,431 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:23:03,431 : getVerificationCode.py : INFO : hahahahhaha
+2021-07-12 10:23:03,431 : getVerificationCode.py : INFO : waawwaaw
+2021-07-12 10:23:03,431 : getVerificationCode.py : INFO : waawwaaw
+2021-07-12 10:23:03,431 : getVerificationCode.py : INFO : waawwaaw
+2021-07-12 10:23:03,431 : getVerificationCode.py : INFO : waawwaaw
+2021-07-12 10:25:57,378 : getVerificationCode.py : INFO : 已定位验证码
+2021-07-12 10:25:57,393 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:25:57,393 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:25:57,472 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:25:57,472 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:25:57,472 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:25:57,711 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:25:57,711 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:25:57,711 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:25:57,711 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:27:35,430 : getLog.py : INFO : traceback.format_exc()
+2021-07-12 10:27:35,430 : getLog.py : INFO : weishahuiliangci
+2021-07-12 10:28:02,319 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:28:02,319 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:28:02,320 : getLog.py : INFO : traceback.format_exc()
+2021-07-12 10:28:02,320 : getLog.py : INFO : weishahuiliangci
+2021-07-12 10:28:31,258 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:28:31,258 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:29:33,292 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:29:41,106 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:30:04,460 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:30:22,744 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:31:56,842 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:32:03,212 : getLog.py : INFO : zhejiuhenqiguai
+2021-07-12 10:32:47,284 : getVerificationCode.py : INFO : 已定位验证码
+2021-07-12 10:33:22,918 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:33:22,918 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:35:48,574 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:35:48,574 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:35:48,574 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:35:49,943 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:35:49,943 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:35:49,943 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:35:49,943 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:36:26,377 : getVerificationCode.py : INFO : 已定位验证码
+2021-07-12 10:36:26,392 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:36:26,392 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:36:26,473 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:36:26,473 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:36:26,473 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:36:26,691 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:36:26,691 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:36:26,691 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:36:26,691 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:37:25,467 : getVerificationCode.py : INFO : 已定位验证码
+2021-07-12 10:37:45,936 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:37:45,936 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:38:23,207 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:38:23,207 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:38:23,207 : getVerificationCode.py : INFO : 已二值化处理图片
+2021-07-12 10:38:30,560 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:38:30,560 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:38:30,560 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:38:30,560 : getVerificationCode.py : INFO : 已获取验证码值
+2021-07-12 10:39:36,301 : getVerificationCode.py : INFO : 已定位验证码
+2021-07-12 10:43:34,251 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:43:34,251 : getVerificationCode.py : INFO : 获取验证码各顶点坐标
+2021-07-12 10:44:40,934 : getLog.py : INFO : 1111
+2021-07-12 10:44:40,934 : getLog.py : INFO : 2222
+2021-07-12 10:44:40,934 : getLog.py : INFO : 3333
+2021-07-12 10:45:50,624 : getLog.py : INFO : 1111
+2021-07-12 10:45:50,624 : getLog.py : INFO : 2222
+2021-07-12 10:45:50,624 : getLog.py : INFO : 3333
+2021-07-13 13:44:44,405 : operateExcel.py : ERROR : 文件路径不存在，请检查路径是否正确
+2021-07-13 13:44:44,406 : operateExcel.py : ERROR : NoneType: None
+

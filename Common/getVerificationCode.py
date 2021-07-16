@@ -9,8 +9,8 @@ import traceback
 import requests
 import pytesseract
 from PIL import Image
-from getLog import logger
-from getConfig import Config
+from Common.getLog import logger
+from Common.getConfig import Config
 from selenium.webdriver.common.by import By
 from time import sleep,strftime,localtime,time
 from Library.baidu_api_sdk.aip import AipOcr

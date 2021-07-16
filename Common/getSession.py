@@ -7,8 +7,8 @@
 """
 
 import requests
-from getLog import logger
-from getConfig import Config
+from Common.getLog import logger
+from Common.getConfig import Config
 
 
 class Session:

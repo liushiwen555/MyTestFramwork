@@ -5,16 +5,16 @@
 import zmail
 import traceback
 import openpyxl
-from getLog import logger
-from getConfig import getEmailOptionValues
+from Common.getLog import logger
+from Common.getConfig import getEmailOptionValues
 
 class SendEmail(object):
-    def __init__(self,subject,content_text=None,content_html_file=None,attachments=None):
+    def __init__(self, subject, content_text=None, content_html_file=None, attachments=None):
         '''
         构造方法，初始化邮件内容
         :param subject: type:string;主题
         :param content_text: type:string,自定义文本
-        :param content__html_file: type:string; html file path;
+        :param content_html_file: type:string; html file path;
         :param attachments: type:list;附件
         '''
         self.subject = subject

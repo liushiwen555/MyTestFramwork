@@ -6,10 +6,10 @@
 import traceback
 import openpyxl
 import os
-from getLog import logger
-from getConfig import Config
 import pandas as pd
-from util import stringToDict
+from Common.getLog import logger
+from Common.getConfig import Config
+from Common.util import stringToDict
 
 
 class OperateXlsx:
@@ -91,6 +91,7 @@ class OperateXlsx:
             self.logger.error("请检查传入列号的格式和具体数据是否正确")
             self.logger.error(traceback.format_exc())
 
+    @property
     def readByRowAll(self):
         """按行获取所有数据"""
         maxrow=self.maxRow()

@@ -4,8 +4,8 @@
 
 import traceback
 import pymysql
-from getLog import logger
-from getConfig import Config
+from Common.getLog import logger
+from Common.getConfig import Config
 
 class MysqlObject(object):
     def __init__(self,host,user,password,dbname,port=3306):

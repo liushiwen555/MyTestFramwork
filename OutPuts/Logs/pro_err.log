@@ -147,3 +147,53 @@ pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; chec
 2021-07-13 13:47:04,890 : operateExcel.py : ERROR : <class 'FileNotFoundError'>
 2021-07-13 13:47:40,383 : operateExcel.py : ERROR : 文件路径不存在，请检查路径是否正确
 2021-07-13 13:48:13,990 : operateExcel.py : ERROR : 请检查传入sheet是否存在
+2021-07-15 09:18:18,186 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-15 10:52:30,657 : sendEmail.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/sendEmail.py", line 53, in mail_message
+    with open(file=self.content_html_file, mode="r", encoding="utf-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '2020-05-20-23_11_43_result.html'
+
+2021-07-15 10:52:30,657 : sendEmail.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/sendEmail.py", line 62, in mail_message
+    'content_html': self.content_html,
+AttributeError: 'SendEmail' object has no attribute 'content_html'
+
+2021-07-15 10:52:30,658 : sendEmail.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/sendEmail.py", line 92, in send_email
+    self.server.send_mail(recipients=recipients_info,cc=carbon_copy_info,mail=self.msg)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/zmail/server.py", line 96, in send_mail
+    _mail = Mail(mail, debug=self.debug, log=self.log)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/zmail/mime.py", line 27, in __init__
+    raise InvalidArguments('mail field excepted type dict or CaseInsensitiveDict got {}'.format(type(mail)))
+zmail.exceptions.InvalidArguments: mail field excepted type dict or CaseInsensitiveDict got <class 'NoneType'>
+
+2021-07-15 15:04:03,537 : browser.py : ERROR : 仅支持firefox, chrome, ie, phantomjs!
+2021-07-15 15:04:03,537 : browser.py : ERROR : NoneType: None
+
+2021-07-15 15:04:33,271 : browser.py : ERROR : NoneType: None
+
+2021-07-15 15:04:47,179 : browser.py : ERROR : 仅支持firefox, chrome, ie, phantomjs!
+2021-07-15 15:07:54,116 : browser.py : ERROR : 请检查url是否传入
+2021-07-15 15:07:54,128 : browser.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/browser.py", line 35, in get
+    self.driver.get(url)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'url' must be a string
+  (Session info: chrome=91.0.4472.114)
+
+
+2021-07-15 15:27:57,701 : client.py : ERROR : 不支持的method:HAHA，请检查传入参数！
+2021-07-16 11:02:09,966 : APIMethodEntrance.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/KernelEntrace/APIMethodEntrance.py", line 13, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+

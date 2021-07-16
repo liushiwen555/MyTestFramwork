@@ -162,3 +162,8 @@ TypeError: can't multiply sequence by non-int of type 'str'
 2021-07-13 13:44:44,405 : operateExcel.py : ERROR : 文件路径不存在，请检查路径是否正确
 2021-07-13 13:44:44,406 : operateExcel.py : ERROR : NoneType: None
 
+2021-07-15 09:17:49,788 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 82, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+

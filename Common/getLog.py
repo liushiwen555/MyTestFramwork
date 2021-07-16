@@ -5,7 +5,7 @@
 import logging
 import os.path
 import traceback
-from getConfig import Config
+from Common.getConfig import Config
 
 class SetLog(object):
     level_relations = {
@@ -59,6 +59,7 @@ class SetLog(object):
         filehandle.setFormatter(self.setFormatter()[1])
         filehandle.setLevel(self.level)
 
+    @property
     def get_logger(self):
         '''
         返还日志器
@@ -70,21 +71,20 @@ class SetLog(object):
         return self.log
 
 def logger(level='info'):
-    logger = SetLog(level=level).get_logger()
+    logger = SetLog(level=level).get_logger
     return logger
 
 
 if __name__ == '__main__':
-    logger = logger()
+    logger = logger("error")
     def func(num1,num2):
         try:
             num_sum = num1 * num2
             print(num_sum)
         except Exception as e:
-            raise e
-            # logger.info("traceback.format_exc()")
+            # raise e
+            logger.error(traceback.format_exc())
             # logger.info("weishahuiliangci")
-
     func(1,2)
     func("hello","python")
 

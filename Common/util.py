@@ -4,8 +4,21 @@
 
 import ast
 import json
+import base64
 import jmespath
 from client import HTTPClient
+
+
+def imgToBase64(img):
+    with open(img, 'rb') as f:
+        base64_data = base64.b64encode(f.read())
+        b64 = base64_data.decode()
+        return b64
+
+def base64ToImg(b64_value):
+    img = base64.b64decode(b64_value)
+    with open("pic.jpg", "wb") as fh:
+        fh.write(img)
 
 def stringToDict(string_data):
     """

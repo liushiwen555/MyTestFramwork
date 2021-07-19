@@ -161,3 +161,10 @@ if __name__ == '__main__':
     # # code = IdentificationCodes(driver=driver,locationType=By.XPATH,locatorExpression=locator).identify_verification_code_by_ttshitu()
     # code = getCode(driver,By.XPATH,locator)
     # print(code)
+
+
+
+
+
+
+

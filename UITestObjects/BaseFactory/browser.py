@@ -73,6 +73,13 @@ class Browser(object):
     def quit(self):
         self.driver.quit()
 
+class BrowserBAK(object):
+    def __init__(self,driver):
+        self.logger = logger("error")
+        pass
+
+
+
 
 if __name__ == '__main__':
     b = Browser().get("http://www.baidu.com")

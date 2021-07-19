@@ -29,7 +29,7 @@ class WaitUtil(object):
     element_located_selection_state_to_be       -判断某个元素的选中状态是否符合预期，布尔
     alert_is_present                            -判断页面上是否存在alert，布尔
     """
-    def __init__(self,driver,timeout=20):
+    def __init__(self, driver, timeout=20):
         """
         :param driver: WebDriver实例
         :param timeout: 超时时间,默认20s
@@ -48,7 +48,7 @@ class WaitUtil(object):
         self._wait = WebDriverWait(self._driver,timeout)
         self.err_logger = logger('error')
 
-    def title_is(self,expect_title):
+    def title_is(self, expect_title):
         """
         判断title是否出现，type is bool
         :param expect_title: 传入期待的title信息,type is string
@@ -59,7 +59,7 @@ class WaitUtil(object):
         except:
             self.err_logger.error(traceback.format_exc())
 
-    def title_contains(self,expect_contain_text):
+    def title_contains(self, expect_contain_text):
         """
         判断title是否包含某些字符
         :param expect_contain_text: 期待包含的字符，type is string
@@ -70,7 +70,7 @@ class WaitUtil(object):
         except:
             self.err_logger.error(traceback.format_exc())
 
-    def presence_of_element_located(self,locationType,locatorExpression):
+    def presence_of_element_located(self, locationType, locatorExpression):
         """
         判断元素是否被加载到dom树里，并不代表元素一定可见
         :param locationType: 定位方法，type is string，小写字母
@@ -89,7 +89,7 @@ class WaitUtil(object):
         except:
             self.err_logger.error(traceback.format_exc())
 
-    def visibility_of_element_located(self,locationType,locatorExpression):
+    def visibility_of_element_located(self, locationType, locatorExpression):
         """
         判断某个元素是否被添加到了dom里并且可见，宽和高都大于0
         :param locationType: 定位方法，type is string，小写字母

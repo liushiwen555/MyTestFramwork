@@ -11,7 +11,9 @@
 from selenium import webdriver
 
 class UIMethodInvocation(object):
-    pass
+    def __init__(self):
+        pass
+
 
 
 

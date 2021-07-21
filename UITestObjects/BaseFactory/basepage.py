@@ -20,10 +20,10 @@ from Common.accordingWait import WaitUtil
 # 可根据需要自行扩展
 """
 
-CHROMEDRIVER_PATH = os.path.join(DRIVER_PATH, 'chromedriver')
-IEDRIVER_PATH = os.path.join(DRIVER_PATH, 'IEDriverServer')
-PHANTOMJSDRIVER_PATH = os.path.join(DRIVER_PATH, 'phantomjs')
-FIREFOXDRIVER_PATH = os.path.join(DRIVER_PATH, 'firefoxdriver')
+CHROMEDRIVER_PATH: str = os.path.join(DRIVER_PATH, 'chromedriver')
+IEDRIVER_PATH: str = os.path.join(DRIVER_PATH, 'IEDriverServer')
+PHANTOMJSDRIVER_PATH: str = os.path.join(DRIVER_PATH, 'phantomjs')
+FIREFOXDRIVER_PATH: str = os.path.join(DRIVER_PATH, 'firefoxdriver')
 
 TYPES = {
     'firefox': webdriver.Firefox,
@@ -113,7 +113,7 @@ class BasePage(object):
         """
         self.driver.quit()
 
-    def get_element(self, location_type, locator_expression):
+    def find_element(self, location_type, locator_expression):
         """
         返还定位元素element对象
         :param location_type: 定位方式
@@ -184,7 +184,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -204,7 +204,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -223,7 +223,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -242,7 +242,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -261,7 +261,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -280,7 +280,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -303,7 +303,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[start_location_type.lower()],
             locator_expression=start_locator_expression
         )
-        start_element = self.get_element(
+        start_element = self.find_element(
             location_type=self.locationTypeDict[start_location_type.lower()],
             locator_expression=start_locator_expression
         )
@@ -311,11 +311,11 @@ class BasePage(object):
             location_type=self.locationTypeDict[target_location_type.lower()],
             locator_expression=target_locator_expression
         )
-        target_element = self.get_element(
+        tarfind_element = self.find_element(
             location_type=self.locationTypeDict[target_location_type.lower()],
             locator_expression=target_locator_expression
         )
-        ActionChains(self.driver).drag_and_drop(start_element, target_element).perform()
+        ActionChains(self.driver).drag_and_drop(start_element, tarfind_element).perform()
 
     def submit(self, location_type, locator_expression):
         """
@@ -330,7 +330,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -388,7 +388,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -407,7 +407,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -426,7 +426,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -534,7 +534,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        iframe_ele = self.get_element(
+        iframe_ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -569,7 +569,7 @@ class BasePage(object):
         :return:
         """
         original_windows = self.driver.current_window_handle
-        ele = self.get_element(
+        ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -658,7 +658,7 @@ class BasePage(object):
                 location_type=self.locationTypeDict[location_type.lower()],
                 locator_expression=locator_expression
             )
-            select_ele = self.get_element(
+            select_ele = self.find_element(
                 location_type=self.locationTypeDict[location_type.lower()],
                 locator_expression=locator_expression
             )
@@ -685,7 +685,7 @@ class BasePage(object):
                 location_type=self.locationTypeDict[location_type.lower()],
                 locator_expression=locator_expression
             )
-            select_ele = self.get_element(
+            select_ele = self.find_element(
                 location_type=self.locationTypeDict[location_type.lower()],
                 locator_expression=locator_expression
             )
@@ -713,7 +713,7 @@ class BasePage(object):
                 location_type=self.locationTypeDict[location_type.lower()],
                 locator_expression=locator_expression
             )
-            select_ele = self.get_element(
+            select_ele = self.find_element(
                 location_type=self.locationTypeDict[location_type.lower()],
                 locator_expression=locator_expression
             )
@@ -735,7 +735,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        time_control_ele = self.get_element(
+        time_control_ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -755,7 +755,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        time_control_ele = self.get_element(
+        time_control_ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -777,7 +777,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        time_control_ele = self.get_element(
+        time_control_ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -801,7 +801,7 @@ class BasePage(object):
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
-        time_control_ele = self.get_element(
+        time_control_ele = self.find_element(
             location_type=self.locationTypeDict[location_type.lower()],
             locator_expression=locator_expression
         )
@@ -856,7 +856,7 @@ class BasePage(object):
 if __name__ == '__main__':
     driver = BasePage(browser_type='chrome')
     driver.get("http://www.baidu.com")
-    driver.get_element("id","kw").send_keys("selenium")
-    driver.get_element("id", "su").click()
+    driver.find_element("id","kw").send_keys("selenium")
+    driver.find_element("id", "su").click()
     driver.element_wait("xpath", '//*[@id="2"]/h3/a')
     driver.quit()

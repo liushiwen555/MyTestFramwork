@@ -19,6 +19,7 @@ class UserLoginLocator:
 
     """验证码图片"""
     captcha_img = (By.ID, 'captcha-img')
+    # captcha_img = (By.XPATH, '//*[@id="captcha-img"]')
 
     """登录按钮"""
     button_login = (By.XPATH, '/html/body/div/div/div[2]/div/form/div[4]/div/button')

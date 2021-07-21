@@ -5,20 +5,21 @@
 
 import json
 import base64
+import os
 import traceback
 import requests
 import pytesseract
 from PIL import Image
 from Common.getLog import logger
-from Common.getConfig import Config
+from Common.getConfig import IMG_PATH
 from selenium.webdriver.common.by import By
 from time import sleep,strftime,localtime,time
 from Library.baidu_api_sdk.aip import AipOcr
 from Library.ShowapiRequest import ShowapiRequest
 
 
-class IdentificationCodes(object):
-    def __init__(self,driver=None,locationType=None,locatorExpression=None):
+class GetCaptcha(object):
+    def __init__(self, driver=None, locationType=None, locatorExpression=None):
         """
         :param driver: 传入WebDriver实例
         :param locationType: 定位方式
@@ -27,8 +28,7 @@ class IdentificationCodes(object):
         self.driver = driver
         self.locationType = locationType
         self.locatorExpression = locatorExpression
-        self.config = Config()
-        self.img_path = self.config.get_option_value('image', 'img_path')
+        self.img_path = os.path.join(IMG_PATH, "verificationCode")
         self.err_logger = logger('error')
 
     def get_code_img_path(self):
@@ -38,9 +38,10 @@ class IdentificationCodes(object):
         '''设置保存整页截图的路径'''
         img_path = path + '/' + file_name
         self.driver.get_screenshot_as_file(img_path)
+        code_location = None
         try:
             '''定位到验证码'''
-            code_location = self.driver.find_element(self.locationType,self.locatorExpression)
+            code_location = self.driver.find_element(self.locationType, self.locatorExpression)
         except:
             self.driver.quit()
             self.err_logger.error(traceback.format_exc())
@@ -137,8 +138,9 @@ class IdentificationCodes(object):
         # word_result = result.get('words_result')
         return result
 
-def getCode(driver,locationType,locatorExpression):
-    get_code = IdentificationCodes(driver,locationType,locatorExpression).identify_verification_code_by_ttshitu()
+
+def get_captcha(driver, locationType, locatorExpression):
+    get_code = GetCaptcha(driver, locationType, locatorExpression).identify_verification_code_by_ttshitu()
     return get_code
 
 if __name__ == '__main__':
@@ -146,8 +148,9 @@ if __name__ == '__main__':
     driver = webdriver.Chrome()
     driver.get("http://localhost:8080/jpress/user/login")
     driver.maximize_window()
-    code = IdentificationCodes(driver=driver,locationType=By.ID,locatorExpression="captcha-img").identify_verification_code_by_ttshitu()
-    balance = IdentificationCodes().get_ttshitu_palance()
+    # code = GetCaptcha(driver=driver, locationType=By.ID, locatorExpression="captcha-img").identify_verification_code_by_ttshitu()
+    code = get_captcha(driver=driver, locationType=By.ID, locatorExpression="captcha-img")
+    balance = GetCaptcha().get_ttshitu_palance()
     # code = IdentificationCodes(driver, By.ID, "captcha-img").identify_verification_code_by_BaiduAI()
     print(code)
     print(balance)

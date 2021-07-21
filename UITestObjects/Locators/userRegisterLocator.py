@@ -5,7 +5,7 @@
 from selenium.webdriver.common.by import By
 
 
-class UserLoginLocator():
+class UserRegisterLocator():
     """用户注册页面元素定位方式和定位表达式"""
 
     """用户名输入框"""

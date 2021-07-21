@@ -493,7 +493,7 @@ class BasePage(object):
         filepath = screenshot_path + '/%s_%s.png' % (st, filename)
         self.driver.get_screenshot_as_file(filepath)
 
-    def implicitly_wait(self, time_to_wait):
+    def implicitly_wait(self, time_to_wait=10):
         """
         Implicitly wait.All elements on the page.
         :Usage:
@@ -503,6 +503,23 @@ class BasePage(object):
         """
         self.driver.implicitly_wait(time_to_wait)
 
+    def get_alert_text(self):
+        """
+        Gets the text of the Alert.
+        :return:
+        """
+        sleep(1)
+        return self.driver.switch_to.alert.text
+
+    def alert_send_keys(self, value):
+        """
+        Pass a value to the Alert input field
+        :param value:
+        :return:
+        """
+        sleep(1)
+        self.driver.switch_to.alert.send_keys(value)
+
     def alert_accept(self):
         """
         Accept warning box.
@@ -510,6 +527,7 @@ class BasePage(object):
             driver.alert_accept()
         :return:
         """
+        sleep(1)
         self.driver.switch_to.alert.accept()
 
     def alert_dismiss(self):
@@ -519,6 +537,7 @@ class BasePage(object):
             driver.alert_dismiss()
         :return:
         """
+        sleep(1)
         self.driver.switch_to.alert.dismiss()
 
     def switch_to_frame(self, location_type, locator_expression):

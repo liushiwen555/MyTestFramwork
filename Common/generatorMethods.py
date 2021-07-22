@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/14 5:19 下午
+# @Time     : 2020/11/14 5:19 下午
 # @Author   : LiuShiWen
 
 import random
 from faker import Factory
+
 
 class FakerData(object):
     """一些生成器方法，生成随机数，手机号，以及连续数字等，以便使用这些数据进行测试"""

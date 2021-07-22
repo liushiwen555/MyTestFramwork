@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/2 8:59 下午
+# @Time     : 2020/11/2 8:59 下午
 # @Author   : LiuShiWen
 
 import traceback
@@ -45,8 +45,8 @@ class WaitUtil(object):
             "partial_link_text": By.PARTIAL_LINK_TEXT
         }
         self._driver = driver
-        self._wait = WebDriverWait(self._driver,timeout)
-        self.err_logger = logger('error')
+        self._wait = WebDriverWait(self._driver, timeout)
+        self.logger = logger("error")
 
     def title_is(self, expect_title):
         """
@@ -57,7 +57,7 @@ class WaitUtil(object):
         try:
             self._wait.until(EC.title_is(expect_title))
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def title_contains(self, expect_contain_text):
         """
@@ -68,7 +68,7 @@ class WaitUtil(object):
         try:
             self._wait.until(EC.title_contains(expect_contain_text))
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def presence_of_element_located(self, locationType, locatorExpression):
         """
@@ -87,7 +87,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def visibility_of_element_located(self, locationType, locatorExpression):
         """
@@ -106,7 +106,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def visibility_of(self,locationType,locatorExpression):
         """
@@ -125,7 +125,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def presence_of_all_elements_located(self,locationType,locatorExpression):
         """
@@ -144,7 +144,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def visibility_of_any_elements_located(self,locationType,locatorExpression):
         """
@@ -163,7 +163,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def text_to_be_present_in_element(self,locationType,locatorExpression,expect_str):
         """
@@ -178,12 +178,12 @@ class WaitUtil(object):
                 self._wait.until(
                     EC.text_to_be_present_in_element((
                         self.locationTypeDict[locationType],locatorExpression
-                    ),expect_str)
+                    ), expect_str)
                 )
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def text_to_be_present_in_element_value(self,locationType,locatorExpression,expect_str):
         """
@@ -198,12 +198,12 @@ class WaitUtil(object):
                 self._wait.until(
                     EC.text_to_be_present_in_element_value((
                         self.locationTypeDict[locationType],locatorExpression
-                    ),expect_str)
+                    ), expect_str)
                 )
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def frame_to_be_available_and_switch_to_it(self,locationType,locatorExpression):
         """
@@ -222,7 +222,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def invisibility_of_element_located(self,locationType,locatorExpression):
         """
@@ -241,7 +241,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def element_to_be_clickable(self,locationType,locatorExpression):
         """
@@ -260,7 +260,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def staleness_of(self,locationType,locatorExpression):
         """
@@ -279,7 +279,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def element_to_be_selected(self,locationType,locatorExpression):
         """
@@ -298,7 +298,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def element_selection_state_to_be(self,locationType,locatorExpression):
         """
@@ -317,7 +317,7 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
     def element_located_selection_state_to_be(self,locationType,locatorExpression):
         """
@@ -336,9 +336,9 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
 
-    def alert_is_present(self,locationType,locatorExpression):
+    def alert_is_present(self, locationType, locatorExpression):
         """
         判断页面上是否存在alert，如果有就切换到alert并返回alert的内容
         :param locationType:
@@ -353,4 +353,4 @@ class WaitUtil(object):
             else:
                 raise TypeError("定位方式异常，请检查定位方式是否正确")
         except:
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())

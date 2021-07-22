@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/2 3:06 下午
+# @Time     : 2020/12/10 3:06 下午
 # @Author   : LiuShiWen
 
 import zmail
@@ -7,6 +7,7 @@ import traceback
 import openpyxl
 from Common.getLog import logger
 from Common.getConfig import getEmailOptionValues
+
 
 class SendEmail(object):
     def __init__(self, subject, content_text=None, content_html_file=None, attachments=None):
@@ -17,12 +18,12 @@ class SendEmail(object):
         :param content_html_file: type:string; html file path;
         :param attachments: type:list;附件
         '''
+        self.err_logger = logger("error")
         self.subject = subject
         self.content_text = content_text
         self.content_html_file = content_html_file
         self.attachments = attachments
         self.msg = None
-        self.logger = logger('error')
         self.username = getEmailOptionValues()[0]
         self.password = getEmailOptionValues()[1]
 
@@ -39,9 +40,9 @@ class SendEmail(object):
                         }
                         return self.msg
                     except BaseException as e:
-                        self.logger.error(traceback.format_exc())
+                        self.err_logger.error(traceback.format_exc())
                 else:
-                    self.logger.error("附件类型不是list")
+                    self.err_logger.error("附件类型不是list")
             else:
                 self.msg = {
                     'subject': '主题' + self.subject,
@@ -53,7 +54,7 @@ class SendEmail(object):
                 with open(file=self.content_html_file, mode="r", encoding="utf-8") as file:
                     self.content_html = file.read()
             except BaseException as e:
-                self.logger.error(traceback.format_exc())
+                self.err_logger.error(traceback.format_exc())
             if self.attachments:
                 if isinstance(self.attachments, list):
                     try:
@@ -64,9 +65,9 @@ class SendEmail(object):
                         }
                         return self.msg
                     except BaseException as e:
-                        self.logger.error(traceback.format_exc())
+                        self.err_logger.error(traceback.format_exc())
                 else:
-                    self.logger.error("附件类型不是list")
+                    self.err_logger.error("附件类型不是list")
             else:
                 self.msg = {
                     'subject': '主题' + self.subject,
@@ -74,7 +75,7 @@ class SendEmail(object):
                 }
                 return self.msg
         else:
-            self.logger.info("未传入邮件内容或邮件内容格")
+            self.err_logger.error("未传入邮件内容或邮件内容格")
 
     def send_email(self,recipients_info=None,carbon_copy_info = None,username = '516001590@qq.com',password = 'ubonxsjozawobija'):
         '''
@@ -93,11 +94,12 @@ class SendEmail(object):
                 else:
                     self.server.send_mail(recipients=recipients_info,mail=self.msg)
             else:
-                self.logger.info('无收件人信息或者格式错误，需要传入list或string格式')
+                logger().info('无收件人信息或者格式错误，需要传入list或string格式')
         except:
-            self.logger.error(traceback.format_exc())
+            self.err_logger.error(traceback.format_exc())
         finally:
-            self.logger.info('邮件发送成功')
+            logger().info('邮件发送成功')
+
 
 if __name__ == '__main__':
     text = "这是一条测试邮件"

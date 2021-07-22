@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/2 3:07 下午
+# @Time     : 2021/1/13 3:07 下午
 # @Author   : LiuShiWen
 import traceback
 from hashlib import sha1
@@ -99,6 +99,7 @@ def sign(sign_dict, private_key=None, encrypt_way='MD5'):
     string = string.replace(' ', '')
     return encrypt(string, salt=private_key, encrypt_way=encrypt_way)
 
+
 def encrypt(string, salt='', encrypt_way='MD5'):
     """ 加密函数,根据输入的string与加密盐，按照encrypt方式进行加密，并返回加密后的字符串 """
     string += salt
@@ -107,11 +108,12 @@ def encrypt(string, salt='', encrypt_way='MD5'):
     elif encrypt_way.upper() == 'SHA1':
         hash_string = sha1()
     else:
-        logger("error").error('请输入正确的加密方式，目前仅支持 MD5 或 SHA1')
-        logger("error").error(traceback.format_exc())
+        logger('error', '请输入正确的加密方式，目前仅支持 MD5 或 SHA1')
+        logger('error', traceback.format_exc())
         return False
     hash_string.update(string.encode())
     return hash_string.hexdigest()
+
 
 if __name__ == '__main__':
     print(encrypt('100000307111111'))

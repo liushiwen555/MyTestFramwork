@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/2 3:07 下午
+# @Time     : 2020/11/25 3:07 下午
 # @Author   : LiuShiWen
 
 
@@ -116,7 +116,7 @@ class OperateXlsx:
             self.logger.error("检查传入数据是否正确")
             self.logger.error(traceback.format_exc())
 
-    def writeByRow(self,row,data):
+    def writeByRow(self, row, data):
         """
         在指定行写一行内容，data为列表
         :param row: 行号
@@ -131,6 +131,7 @@ class OperateXlsx:
         except:
             self.logger.error("检查传入数据是否正确")
             self.logger.error(traceback.format_exc())
+
 
 if __name__ == '__main__':
     work = OperateXlsx('test_data.xlsx', 'Register')

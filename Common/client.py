@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/14 5:54 下午
+# @Time     : 2020/11/14 5:54 下午
 # @Author   : LiuShiWen
 
 """
@@ -15,6 +15,7 @@ from getLog import logger
 
 # 所有支持的前后前交互方法
 METHODS = ['GET', 'POST', 'HEAD', 'TRACE', 'PUT', 'DELETE', 'OPTIONS', 'CONNECT']
+err_logger = logger("error")
 
 
 class HTTPClient(object):
@@ -25,9 +26,8 @@ class HTTPClient(object):
         self.url = url
         self.session = requests.session()
         self.method = method.upper()
-        self.logger = logger("error")
         if self.method not in METHODS:
-            self.logger.error('不支持的method:{0}，请检查传入参数！'.format(self.method))
+            logger('不支持的method:{0}，请检查传入参数！'.format(self.method))
         self.set_headers(headers)
         self.set_cookies(cookies)
 
@@ -42,8 +42,8 @@ class HTTPClient(object):
     def send(self, params=None, data=None, **kwargs):
         response = self.session.request(method=self.method, url=self.url, params=params, data=data, **kwargs)
         response.encoding = 'utf-8'
-        logger().debug('{0} {1}'.format(self.method, self.url))
-        logger().debug('请求成功: {0}\n{1}'.format(response, response.text))
+        logger().info('{0} {1}'.format(self.method, self.url))
+        logger().info('请求成功: {0}\n{1}'.format(response, response.text))
         return response
 
 
@@ -64,10 +64,10 @@ class TCPClient(object):
             try:
                 self._sock.connect((self.domain, self.port))
             except socket.error as e:
-                logger("error").exception(e)
+                err_logger.error().exception(e)
             else:
                 self.connected = 1
-                logger().debug('TCPClient connect to {0}:{1} success.'.format(self.domain, self.port))
+                logger().info('TCPClient connect to {0}:{1} success.'.format(self.domain, self.port))
 
     def send(self, data, dtype='str', suffix=''):
         """向服务器端发送send_string，并返回信息，若报错，则返回None"""
@@ -79,9 +79,9 @@ class TCPClient(object):
         if self.connected:
             try:
                 self._sock.send(send_string.encode())
-                logger().debug('TCPClient Send {0}'.format(send_string))
+                logger().info('TCPClient Send {0}'.format(send_string))
             except socket.error as e:
-                logger("error").exception(e)
+                err_logger.exception(e)
 
             try:
                 rec = self._sock.recv(self.max_receive).decode()
@@ -90,13 +90,13 @@ class TCPClient(object):
                 logger().debug('TCPClient received {0}'.format(rec))
                 return rec
             except socket.error as e:
-                logger("error").exception(e)
+                err_logger.error().exception(e)
 
     def close(self):
         """关闭连接"""
         if self.connected:
             self._sock.close()
-            logger().debug('TCPClient closed.')
+            logger().info('TCPClient closed.')
 
 
 # 异步并发客户端

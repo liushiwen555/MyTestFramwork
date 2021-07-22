@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/15 2:13 下午
+# @Time     : 2021/1/15 2:13 下午
 # @Author   : LiuShiWen
 
 import os
@@ -22,15 +22,15 @@ FIREFOXDRIVER_PATH = os.path.join(DRIVER_PATH, 'firefoxdriver')
 
 TYPES = {'firefox': webdriver.Firefox, 'chrome': webdriver.Chrome, 'ie': webdriver.Ie, 'phantomjs': webdriver.PhantomJS}
 EXECUTABLE_PATH = {'firefox': FIREFOXDRIVER_PATH, 'chrome': CHROMEDRIVER_PATH, 'ie': IEDRIVER_PATH, 'phantomjs': PHANTOMJSDRIVER_PATH}
+logger = logger("error")
 
 class Browser(object):
     def __init__(self, browser_type='chrome'):
-        self.logger = logger("error")
         self._type = browser_type.lower()
         if self._type in TYPES:
             self.browser = TYPES[self._type]
         else:
-            self.logger.error('仅支持%s!' % ', '.join(TYPES.keys()))
+            logger('仅支持%s!' % ', '.join(TYPES.keys()))
         self.driver = None
 
     def setHeadlessTrue(self, status=True):
@@ -54,8 +54,8 @@ class Browser(object):
             self.driver.implicitly_wait(implicitly_wait)
             return self
         except:
-            self.logger.error("请检查url格式是否正确")
-            self.logger.error(traceback.format_exc())
+            logger("请检查url格式是否正确")
+            logger(traceback.format_exc())
 
     def save_screen_shot(self, name='screen_shot'):
         day = strftime('%Y%m%d', localtime(time()))

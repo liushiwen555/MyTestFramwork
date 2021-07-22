@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/2 3:06 下午
+# @Time     : 2020/11/29 3:06 下午
 # @Author   : LiuShiWen
 
 import traceback
@@ -7,8 +7,9 @@ import pymysql
 from Common.getLog import logger
 from Common.getConfig import Config
 
+
 class MysqlObject(object):
-    def __init__(self,host,user,password,dbname,port=3306):
+    def __init__(self, host, user, password, dbname, port=3306):
         """
         :param host: 数据库所在服务器IP
         :param username: 数据库用户名
@@ -16,18 +17,18 @@ class MysqlObject(object):
         :param dbname: 要使用的数据库名称
         :param port: 端口号
         """
+        self.logger = logger("error")
         self._host = host
         self._user = user
         self._password = password
         self._dbname = dbname
         self._port = port
-        self.err_logger = logger('error')
         try:
             self._conn = pymysql.connect(host=self._host, user=self._user, password=self._password,
                                    database=self._dbname, port=self._port, charset='utf8', autocommit=True)
         except:
-            self.err_logger.error("请检查传入数据库参数是否正确")
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error("请检查传入数据库参数是否正确")
+            self.logger.error(traceback.format_exc())
 
     def __enter__(self):
         """调用with方法的入口"""
@@ -59,8 +60,8 @@ class MysqlObject(object):
                     self.result = cur.fetchall(size)
             return self.result
         except:
-            self.err_logger.error("SQL错误，请检查SQL格式是否正确")
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error("SQL错误，请检查SQL格式是否正确")
+            self.logger.error(traceback.format_exc())
         finally:
             cur.close()
 
@@ -83,8 +84,8 @@ class MysqlObject(object):
                 print('删除数据：{}'.format(sql))
                 cur.execute(sql)
         except:
-            self.err_logger.error("SQL错误，请检查SQL格式是否正确")
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error("SQL错误，请检查SQL格式是否正确")
+            self.logger.error(traceback.format_exc())
         finally:
             cur.close()
 
@@ -100,8 +101,8 @@ class MysqlObject(object):
             rows = cur.executemany(sql,value_list)
             return rows
         except:
-            self.err_logger.error("SQL错误，请检查SQL格式是否正确")
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error("SQL错误，请检查SQL格式是否正确")
+            self.logger.error(traceback.format_exc())
         finally:
             cur.close()
 

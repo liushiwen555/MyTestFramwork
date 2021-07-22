@@ -2247,3 +2247,337 @@ selenium.common.exceptions.NoAlertPresentException: Message: no such alert
   (Session info: chrome=91.0.4472.164)
 
 
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,095 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:17:47,098 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 27, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 09:37:40,451 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 91, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-22 09:38:05,585 : getLog.py : ERROR : None
+2021-07-22 09:38:09,332 : getLog.py : ERROR : None
+2021-07-22 09:38:09,356 : getLog.py : ERROR : None
+2021-07-22 09:38:09,397 : getLog.py : ERROR : None
+2021-07-22 09:38:09,509 : getLog.py : ERROR : None
+2021-07-22 09:38:09,536 : getLog.py : ERROR : None
+2021-07-22 09:38:09,563 : getLog.py : ERROR : None
+2021-07-22 09:38:09,583 : getLog.py : ERROR : None
+2021-07-22 09:38:10,211 : getLog.py : ERROR : None
+2021-07-22 09:38:10,264 : getLog.py : ERROR : None
+2021-07-22 09:40:16,813 : getLog.py : ERROR : None
+2021-07-22 09:40:20,587 : getLog.py : ERROR : None
+2021-07-22 09:40:20,627 : getLog.py : ERROR : None
+2021-07-22 09:40:20,730 : getLog.py : ERROR : None
+2021-07-22 09:40:20,751 : getLog.py : ERROR : None
+2021-07-22 09:40:20,779 : getLog.py : ERROR : None
+2021-07-22 09:40:20,797 : getLog.py : ERROR : None
+2021-07-22 09:40:21,383 : getLog.py : ERROR : None
+2021-07-22 09:40:21,435 : getLog.py : ERROR : 未捕获到alert事件
+2021-07-22 09:40:21,439 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 22, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 10:02:59,227 : getLog.py : ERROR : 未捕获到alert事件
+2021-07-22 10:02:59,230 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 22, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 510, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 10:04:15,507 : getLog.py : ERROR : 未捕获到alert事件
+2021-07-22 10:04:15,510 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 22, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 510, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 10:09:50,819 : getLog.py : ERROR : 未捕获到alert事件
+2021-07-22 10:09:50,822 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 22, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 510, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 10:23:21,126 : getLog.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/getLog.py", line 101, in func
+    num_sum = num1 * num2
+TypeError: can't multiply sequence by non-int of type 'str'
+
+2021-07-22 10:24:31,389 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 10:24:31,392 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 23, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 510, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 10:26:17,402 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 10:26:17,405 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 23, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 512, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 10:34:37,120 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 10:34:37,123 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 23, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 510, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 10:54:20,650 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 10:54:20,654 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 23, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 510, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+

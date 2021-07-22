@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/2 9:00 下午
+# @Time     : 2020/11/21 9:00 下午
 # @Author   : LiuShiWen
 
 
@@ -29,7 +29,7 @@ class GetCaptcha(object):
         self.locationType = locationType
         self.locatorExpression = locatorExpression
         self.img_path = os.path.join(IMG_PATH, "verificationCode")
-        self.err_logger = logger('error')
+        self.logger = logger("error")
 
     def get_code_img_path(self):
         st = strftime("%Y-%m-%d %H-%M-%S", localtime(time()))
@@ -44,7 +44,7 @@ class GetCaptcha(object):
             code_location = self.driver.find_element(self.locationType, self.locatorExpression)
         except:
             self.driver.quit()
-            self.err_logger.error(traceback.format_exc())
+            self.logger.error(traceback.format_exc())
         '''获取定位到的验证码的左定点坐标'''
         left = code_location.location['x']
         top = code_location.location['y']

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time     : 2021/7/2 3:08 下午
+# @Time     : 2020/12/7 3:08 下午
 # @Author   : LiuShiWen
 
 """
@@ -14,7 +14,7 @@ from Common.getConfig import Config
 class Session:
     def __init__(self):
         self.config = Config()
-        self.err_logger = logger('error')
+        self.err_logger = logger("error")
 
     def get_session(self, env):
         """
@@ -35,7 +35,7 @@ class Session:
             session_debug = requests.session()
             response = session_debug.post(login_url, parm, headers=headers)
             print(response.cookies)
-            self.log.debug('cookies: %s' % response.cookies.get_dict())
+            logger().info('cookies: %s' % response.cookies.get_dict())
             return response.cookies.get_dict()
 
         elif env == "release":
@@ -45,12 +45,12 @@ class Session:
             session_release = requests.session()
             response = session_release.post(login_url, parm, headers=headers)
             print(response.cookies)
-            self.log.debug('cookies: %s' % response.cookies.get_dict())
+            logger().info('cookies: %s' % response.cookies.get_dict())
             return response.cookies.get_dict()
 
         else:
             print("get cookies error")
-            self.log.error('get cookies error, please checkout!!!')
+            self.err_logger('get cookies error, please checkout!!!')
 
 
 if __name__ == '__main__':

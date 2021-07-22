@@ -6,7 +6,7 @@ import ast
 import json
 import base64
 import jmespath
-from client import HTTPClient
+from Common.client import HTTPClient
 
 
 def imgToBase64(img):
@@ -28,7 +28,6 @@ def stringToDict(string_data):
     """
     dict_data = ast.literal_eval(string_data)
     return dict_data
-
 
 class JMESPathExtractor(object):
     """

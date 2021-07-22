@@ -26,7 +26,7 @@ class UserLoginPage(BasePage):
 
     def input_captcha(self):
         self.clear(*self.locator.input_captcha)
-        captcha = self.captcha()
+        captcha = self.get_captcha()
         self.send_keys(*self.locator.input_captcha, captcha)
 
     def click_login_button(self):
@@ -35,8 +35,24 @@ class UserLoginPage(BasePage):
     def click_register_href(self):
         self.click(*self.locator.href_register)
 
-    def captcha(self):
+    def get_captcha(self):
         return get_captcha(self.driver, *self.locator.captcha_img)
+
+    def get_input_error_text(self, input_label):
+        """
+        获取input输入框错误提示
+        :param input_label: 'username'，'pwd'，'captcha'
+        :return:
+        """
+        try:
+            if input_label == 'username':
+                return self.get_text(*self.locator.username_error)
+            elif input_label == 'pwd':
+                return self.get_text(*self.locator.pwd_error)
+            elif input_label == 'captcha':
+                return self.get_text(*self.locator.captcha_error)
+        except Exception:
+            raise Exception("input_label 传参错误，请检查参数是否包含相关内容")
 
 
 if __name__ == '__main__':

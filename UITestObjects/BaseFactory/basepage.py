@@ -39,6 +39,7 @@ EXECUTABLE_PATH = {
 }
 logger = logger("error")
 
+
 class BasePage(object):
     def __init__(self, browser_type='chrome'):
         self.locationTypeDict = {
@@ -90,8 +91,8 @@ class BasePage(object):
             self.driver.maximize_window()
             self.driver.implicitly_wait(implicitly_wait)
         except Exception:
-            logger("请检查url格式是否正确")
-            logger(traceback.format_exc())
+            logger.error("请检查url格式是否正确")
+            logger.error(traceback.format_exc())
 
     def close(self):
         """
@@ -121,8 +122,8 @@ class BasePage(object):
         try:
             return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
         except Exception:
-            logger("请检查定位方式和定位表达式格式是否正确")
-            logger(traceback.format_exc())
+            logger.error("请检查定位方式和定位表达式格式是否正确")
+            logger.error(traceback.format_exc())
 
     def element_wait(self, location_type, locator_expression):
         """
@@ -140,9 +141,9 @@ class BasePage(object):
                 locatorExpression=locator_expression
             )
         except NameError:
-            logger("the correct targeting elements,'id','name','class','link_text','xpath','css'；"
+            logger.error("the correct targeting elements,'id','name','class','link_text','xpath','css'；"
                    "Check that the locator_expression is properly formatted")
-            logger(traceback.format_exc())
+            logger.error(traceback.format_exc())
 
     def max_window(self):
         """
@@ -165,8 +166,8 @@ class BasePage(object):
         try:
             self.driver.set_window_size(wide, high)
         except Exception:
-            logger("检查wide和high数据格式是否正确")
-            logger(traceback.format_exc())
+            logger.error("检查wide和high数据格式是否正确")
+            logger.error(traceback.format_exc())
 
     def click(self, location_type, locator_expression):
         """
@@ -506,7 +507,7 @@ class BasePage(object):
         Gets the text of the Alert.
         :return:
         """
-        # sleep(1)
+        sleep(1)
         return self.driver.switch_to.alert.text
 
     def alert_send_keys(self, value):
@@ -611,8 +612,8 @@ class BasePage(object):
             window_handle = all_handles[handle_index]
             self.driver.switch_to.window(window_handle)
         except IndexError:
-            logger("请检查index数据是否符合要求")
-            logger(traceback.format_exc())
+            logger.error("请检查index数据是否符合要求")
+            logger.error(traceback.format_exc())
 
     def wait_and_save_exception(self, location_type, locator_expression, filename='exception_img'):
         """
@@ -636,7 +637,7 @@ class BasePage(object):
             st = strftime("%Y-%m-%d %H-%M-%S", localtime(time()))
             filepath = screenshot_path + '/%s_%s.png' % (st, filename)
             self.driver.save_screenshot(filepath)
-            logger("元素在预期时间内未加载出来，请检查前置参数")
+            logger.error("元素在预期时间内未加载出来，请检查前置参数")
             return False
 
     def wait_and_exception(self, location_type, locator_expression):
@@ -653,7 +654,7 @@ class BasePage(object):
             )
             return True
         except Exception as e:
-            logger("预期元素未出现，请检查前置参是否正确")
+            logger.error("预期元素未出现，请检查前置参是否正确")
             return False
 
     def select_by_visible_text(self, location_type, locator_expression, text):
@@ -681,8 +682,8 @@ class BasePage(object):
             )
             Select(select_ele).select_by_visible_text(text)
         except Exception:
-            logger("请检查参数是否正确，数据格式是否正确，检查页面可见文本text是否存在")
-            logger(traceback.format_exc())
+            logger.error("请检查参数是否正确，数据格式是否正确，检查页面可见文本text是否存在")
+            logger.error(traceback.format_exc())
 
     def select_by_index(self, location_type, locator_expression, index):
         """
@@ -708,8 +709,8 @@ class BasePage(object):
             )
             Select(select_ele).select_by_index(index)
         except Exception:
-            logger("请检查参数是否正确，数据格式是否正确，检查index是超限")
-            logger(traceback.format_exc())
+            logger.error("请检查参数是否正确，数据格式是否正确，检查index是超限")
+            logger.error(traceback.format_exc())
 
     def select_by_value(self, location_type, locator_expression, value):
         """
@@ -736,8 +737,8 @@ class BasePage(object):
             )
             Select(select_ele).select_by_value(value)
         except Exception:
-            logger("请检查参数是否正确，数据格式是否正确，检查value是否存在")
-            logger(traceback.format_exc())
+            logger.error("请检查参数是否正确，数据格式是否正确，检查value是否存在")
+            logger.error(traceback.format_exc())
 
     def time_control_no_readonly(self, location_type, locator_expression, value):
         """

@@ -11,7 +11,7 @@ import socket
 import json
 import requests
 import asyncio
-from getLog import logger
+from Common.getLog import logger
 
 # 所有支持的前后前交互方法
 METHODS = ['GET', 'POST', 'HEAD', 'TRACE', 'PUT', 'DELETE', 'OPTIONS', 'CONNECT']

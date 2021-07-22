@@ -2581,3 +2581,51 @@ selenium.common.exceptions.NoAlertPresentException: Message: no such alert
   (Session info: chrome=91.0.4472.164)
 
 
+2021-07-22 11:04:15,983 : testUserLogin.py : ERROR : 未捕获到alert事件
+2021-07-22 11:04:15,986 : testUserLogin.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserLogin.py", line 23, in test_login
+    alert_text = self.login.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 511, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 17:09:12,621 : testUserRegister.py : ERROR : 未捕获到alert事件
+2021-07-22 17:09:12,627 : testUserRegister.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserRegister.py", line 31, in test_register
+    alert_text = self.register.get_alert_text()
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 511, in get_alert_text
+    return self.driver.switch_to.alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+    alert.text
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=91.0.4472.164)
+
+
+2021-07-22 17:31:58,462 : testUserRegister.py : ERROR : 未捕获到alert事件
+2021-07-22 17:31:58,464 : testUserRegister.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserRegister.py", line 34, in test_success_register
+    assert alert_text == "注册成功，点击确定进行登录。"
+AssertionError: assert '该用户名已经存在' == '注册成功，点击确定进行登录。'
+
+2021-07-22 17:34:16,991 : testUserRegister.py : ERROR : 未捕获到alert事件
+2021-07-22 17:34:16,992 : testUserRegister.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/TestCases/UITestCases/testUserRegister.py", line 34, in test_success_register
+    assert alert_text == "注册成功，点击确定进行登录。"
+AssertionError: assert '该用户名已经存在' == '注册成功，点击确定进行登录。'
+

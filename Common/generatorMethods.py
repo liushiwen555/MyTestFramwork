@@ -36,7 +36,7 @@ class FakerData(object):
         """随机IPV4地址"""
         return self.fake.ipv4()
 
-    def random_str(self,min_chars=0, max_chars=8):
+    def random_str(self, min_chars=0, max_chars=8):
         """长度在最大值与最小值之间的随机字符串"""
         return self.fake.pystr(min_chars=min_chars, max_chars=max_chars)
 

@@ -32,4 +32,20 @@ class UserRegisterLocator():
     """登录页面链接，文本是这里"""
     href_login = (By.XPATH, '/html/body/div/div/div[2]/div/form/div[6]/div/p/a')
 
+    """用户名为空提示，文本信息：这是必填内容"""
+    username_error = (By.ID, 'username-error')
+
+    """邮箱为空提示，文本信息：这是必填内容"""
+    email_error = (By.ID, 'email-error')
+
+    """密码为空提示，文本信息：这是必填内容"""
+    pwd_error = (By.ID, 'pwd-error')
+
+    """确认密码为空提示，文本信息：这是必填内容"""
+    confirmPwd_error = (By.ID, 'comfirmPwd-error')
+
+    """验证码为空提示，文本信息：这是必填内容"""
+    captcha_error = (By.ID, 'captcha-error')
+
+
 

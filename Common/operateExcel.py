@@ -8,18 +8,22 @@ import openpyxl
 import os
 import pandas as pd
 from Common.getLog import logger
-from Common.getConfig import Config
+from Common.getConfig import UIDATA_PATH, APIDATA_PATH
 from Common.util import stringToDict
 
 
 class OperateXlsx:
-    def __init__(self,filename,sheetname):
-        '''
-        :type filename: str -- 要打开的文件名
-        :param sheetname: str -- 选择操作的excel页名
-        '''
+    def __init__(self, filename, sheetname, data_type):
+        """
+        :param filename: str -- 选择操作的excel页名
+        :param sheetname: str -- 要打开的文件名
+        :param data_type: "ui" or "api"
+        """
         self.logger = logger("error")
-        self.filepath = os.path.join(Config().get_option_value('TestDataPath', 'UITestDataPath'), filename)
+        if data_type.lower() == "ui":
+            self.filepath = os.path.join(UIDATA_PATH, filename)
+        elif data_type.lower() == "api":
+            self.filepath = os.path.join(APIDATA_PATH, filename)
         if not os.path.exists(self.filepath):
             self.logger.error("文件路径不存在，请检查路径是否正确")
             raise FileNotFoundError

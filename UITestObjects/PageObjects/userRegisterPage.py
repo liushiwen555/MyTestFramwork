@@ -9,7 +9,7 @@ from Common.getCaptcha import get_captcha
 import time
 
 
-class UserLoginPage(BasePage):
+class UserRegisterPage(BasePage):
     def __init__(self, browser_type='chrome'):
         BasePage.__init__(self, browser_type)
         self.locator = UserRegisterLocator
@@ -35,7 +35,7 @@ class UserLoginPage(BasePage):
 
     def input_captcha(self):
         self.clear(*self.locator.input_captcha)
-        captcha = self.captcha()
+        captcha = self.get_captcha()
         self.send_keys(*self.locator.input_captcha, captcha)
 
     def click_register_button(self):
@@ -44,12 +44,33 @@ class UserLoginPage(BasePage):
     def click_login_href(self):
         self.click(*self.locator.href_login)
 
-    def captcha(self):
+    def get_captcha(self):
         return get_captcha(self.driver, *self.locator.captcha_img)
+
+    def get_input_error_text(self, input_label):
+        """
+        获取input输入框错误提示
+        :param input_label: 'username'，'email'，'pwd'，'confirm_pwd'，'captcha'
+        :return:
+        """
+        try:
+            if input_label == 'username':
+                return self.get_text(*self.locator.username_error)
+            elif input_label == 'email':
+                return self.get_text(*self.locator.email_error)
+            elif input_label == 'pwd':
+                return self.get_text(*self.locator.pwd_error)
+            elif input_label == 'confirm_pwd':
+                return self.get_text(*self.locator.confirmPwd_error)
+            elif input_label == 'captcha':
+                return self.get_text(*self.locator.captcha_error)
+        except Exception:
+            raise Exception("input_label 传参错误，请检查参数是否包含相关内容")
+
 
 
 if __name__ == '__main__':
-    register = UserLoginPage()
+    register = UserRegisterPage()
     register.goto_user_register_page()
     register.input_username("username")
     register.input_email("test123@qq.com")

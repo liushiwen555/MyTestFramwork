@@ -78,14 +78,13 @@ class GetCaptcha(object):
         return binary_img_path
 
     def identify_verification_code_by_ttshitu(self):
-        '''实例化获取处理后的二值化验证码'''
+        """实例化获取处理后的二值化验证码"""
         code_img_path = self.get_code_img_path()
         def base64_api(img):
             with open(img, 'rb') as f:
                 base64_data = base64.b64encode(f.read())
                 b64 = base64_data.decode()
                 return b64
-
         b64 = base64_api(code_img_path)
         data = {"username": 'zhaoge555', "password": 'zhaoge555', "typeid": 3, "image": b64}
         result = json.loads(requests.post("http://api.ttshitu.com/predict", json=data).text)

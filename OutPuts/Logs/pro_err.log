@@ -2629,3 +2629,475 @@ AssertionError: assert '该用户名已经存在' == '注册成功，点击确�
     assert alert_text == "注册成功，点击确定进行登录。"
 AssertionError: assert '该用户名已经存在' == '注册成功，点击确定进行登录。'
 
+2021-07-27 18:00:27,785 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-27 18:00:57,811 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-27 18:00:57,814 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-27 18:02:16,173 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-27 18:02:46,184 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-27 18:02:46,187 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 08:49:22,428 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 08:49:52,451 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 08:49:52,453 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 08:51:08,586 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 08:51:38,613 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 08:51:38,616 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 09:22:29,605 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 09:22:59,643 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 09:22:59,647 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 09:30:25,709 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 09:30:55,731 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 09:30:55,734 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="email-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 09:31:30,663 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 09:32:00,709 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 09:32:00,710 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 09:40:14,685 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 09:40:44,731 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 09:40:44,733 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 09:43:16,904 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 09:43:46,963 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 09:43:46,966 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 09:48:46,849 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 09:49:16,899 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 09:49:16,902 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 09:53:00,086 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 10:59:02,512 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 10:59:32,531 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 10:59:32,534 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="comfirmPwd-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 11:04:25,946 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 11:04:55,987 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 11:04:55,990 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="comfirmPwd-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 11:05:01,328 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 241, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: 该用户名已经存在
+Message: unexpected alert open: {Alert text : 该用户名已经存在}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 11:05:31,397 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 11:05:31,398 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="captcha-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 11:12:26,923 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-07-28 11:12:26,927 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 11:12:26,930 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/http/client.py", line 1007, in _send_output
+    self.send(msg)
+  File "/Users/liushiwen/miniforge3/envs/py38/lib/python3.8/http/client.py", line 947, in send
+    self.connect()
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x13680d520>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=58314): Max retries exceeded with url: /session/dbba2fd66cfdb7b6a771428d839cab19/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13680d520>: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+2021-07-28 11:18:27,308 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-07-28 11:21:15,043 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 11:21:19,998 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="comfirmPwd-error"]"}
+  (Session info: chrome=92.0.4515.107)
+
+
+2021-07-28 14:20:40,700 : accordingWait.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/Common/accordingWait.py", line 82, in presence_of_element_located
+    self._wait.until(
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 241, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: 验证码不正确
+Message: unexpected alert open: {Alert text : 验证码不正确}
+  (Session info: headless chrome=92.0.4515.107)
+
+
+2021-07-28 14:21:10,707 : basepage.py : ERROR : 请检查定位方式和定位表达式格式是否正确
+2021-07-28 14:21:10,709 : basepage.py : ERROR : Traceback (most recent call last):
+  File "/Users/liushiwen/PycharmProjects/MyTestFramwoek/UITestObjects/BaseFactory/basepage.py", line 123, in find_element
+    return self.driver.find_element(self.locationTypeDict[location_type.lower()], locator_expression)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liushiwen/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="captcha-error"]"}
+  (Session info: headless chrome=92.0.4515.107)
+
+

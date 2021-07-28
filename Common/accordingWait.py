@@ -29,7 +29,7 @@ class WaitUtil(object):
     element_located_selection_state_to_be       -判断某个元素的选中状态是否符合预期，布尔
     alert_is_present                            -判断页面上是否存在alert，布尔
     """
-    def __init__(self, driver, timeout=20):
+    def __init__(self, driver, timeout=10):
         """
         :param driver: WebDriver实例
         :param timeout: 超时时间,默认20s

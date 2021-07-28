@@ -50,7 +50,7 @@ class FakerData(object):
                 val += local_increment
         return generate_started_ids
 
-    def factory_choice_generator(self,values):
+    def factory_choice_generator(self, values):
         """ 产生一个随机选项生成器,返回一个生成器函数，调用这个函数产生生成器，从给定的list中随机取一项。 """
         def choice_generator():
             my_list = list(values)

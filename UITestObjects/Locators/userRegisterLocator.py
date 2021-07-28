@@ -5,7 +5,7 @@
 from selenium.webdriver.common.by import By
 
 
-class UserRegisterLocator():
+class UserRegisterLocator:
     """用户注册页面元素定位方式和定位表达式"""
 
     """用户名输入框"""
@@ -42,7 +42,7 @@ class UserRegisterLocator():
     pwd_error = (By.ID, 'pwd-error')
 
     """确认密码为空提示，文本信息：这是必填内容"""
-    confirmPwd_error = (By.ID, 'comfirmPwd-error')
+    confirmPwd_error = (By.ID, 'confirmPwd-error')
 
     """验证码为空提示，文本信息：这是必填内容"""
     captcha_error = (By.ID, 'captcha-error')

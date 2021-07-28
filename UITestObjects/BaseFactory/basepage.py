@@ -142,7 +142,7 @@ class BasePage(object):
             )
         except NameError:
             logger.error("the correct targeting elements,'id','name','class','link_text','xpath','css'；"
-                   "Check that the locator_expression is properly formatted")
+                         "Check that the locator_expression is properly formatted")
             logger.error(traceback.format_exc())
 
     def max_window(self):

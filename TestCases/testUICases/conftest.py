@@ -16,10 +16,12 @@ def user_register_page():
     register.goto_user_register_page()
     logger.info("进入注册页面")
     yield register
+    register.save_screenshot()
     register.quit()
     logger.info("退出浏览器")
 
-@pytest.fixture()
+# @pytest.fixture(scope="function")
+
 
 
 

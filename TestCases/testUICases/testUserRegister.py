@@ -1,13 +1,17 @@
 # -*- coding: utf-8 -*-
 # @Time     : 2021/7/22 4:59 下午
 # @Author   : LiuShiWen
+
 import time
 import traceback
 import pytest
+from Common.getLog import logger
 from UITestObjects.PageObjects.userRegisterPage import UserRegisterPage
 from Common.getLog import logger
 from UITestObjects.Locators.userRegisterLocator import UserRegisterLocator
 from UITestObjects.UITestDataFactory.userRegisterTestDataFactory import UserRegisterTestData
+
+logger = logger()
 
 
 class TestRegisterCase(object):
@@ -49,7 +53,6 @@ class TestRegisterCase(object):
     @pytest.mark.parametrize('username, email, pwd, confirm_pwd', success_register_data)
     def test_success_register(self, username, email, pwd, confirm_pwd, user_register_page):
         register = user_register_page
-        register.refresh_current_page()
         register.input_username(username)
         register.input_email(email)
         register.input_pwd(pwd)
@@ -57,7 +60,6 @@ class TestRegisterCase(object):
         register.input_captcha()
         register.click_register_button()
         success_register_text = register.get_alert_text()
-        # pytest.assume(success_register_text == "注册成功，点击确定进行登录。")
         assert success_register_text == "注册成功，点击确定进行登录。"
 
 

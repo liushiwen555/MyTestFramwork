@@ -59,7 +59,7 @@ class BasePage(object):
                 driver = TYPES[browser_type]
             self.driver = driver(
                 executable_path=EXECUTABLE_PATH[browser_type],
-                options=self.setHeadlessTrue(status=False)
+                options=self.setHeadlessTrue(status=True)
             )
         except NameError:
             logger.error("Not found this browser,You can enter 'firefox', 'chrome', 'ie' or 'phantomjs'")

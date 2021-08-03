@@ -467,8 +467,9 @@ class BasePage(object):
         if not os.path.exists(screenshot_path):
             os.makedirs(screenshot_path)
         st = strftime("%Y-%m-%d %H-%M-%S", localtime(time()))
-        screenshot = self.driver.save_screenshot(screenshot_path + '/%s_%s.png' % (st, filename))
-        return screenshot
+        img_path = screenshot_path + '/%s_%s.png' % (st, filename)
+        screenshot = self.driver.save_screenshot(img_path)
+        return img_path
 
     def get_screenshot(self, filename='screen_shot'):
         """

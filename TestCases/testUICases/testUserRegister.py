@@ -4,7 +4,6 @@
 
 import time
 import traceback
-
 import allure
 import pytest
 from Common.getLog import logger

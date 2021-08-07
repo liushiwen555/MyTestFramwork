@@ -4,39 +4,32 @@
 
 import traceback
 import pytest
+import allure
 from UITestObjects.PageObjects.userLoginPage import UserLoginPage
 from Common.getLog import logger
-from UITestObjects.UITestDataFactory.dataFactory import UITestDataFactory
+from UITestObjects.UITestDataFactory.userLoginTestDataFactory import UserLoginTestData
 
 
 class TestLoginCase(object):
-    data = ({'UserName': 'test555', 'Email': 'test@qq.com', 'Password': 'test@123', 'Confirm_Password': 'test@123'})
-    # data = ({'user': 1, 'pwd': 2}, {'age': 3, 'email': 'tom@qq.com'})
 
-    def setup_method(self):
-        self.login = UserLoginPage()
-        self.login.goto_user_login_page()
-        self.logger = logger("error")
+    # test_login_data = UserLoginTestData().test_login_data
+    test_login_data = (["test555", "test@123"], ["test556", "test@123"])
 
-    @pytest.mark.parametrize('dict_data', data)
-    def test_login(self, dict_data):
-        print(dict_data)
-        print(type(dict_data))
-        # self.login.input_username('username')
-        # self.login.input_pwd('pwd')
-        # self.login.input_captcha()
-        # self.login.click_login_button()
-        # try:
-        #     alert_text = self.login.get_alert_text()
-        #     print(alert_text)
-        #     assert alert_text == "用户名不正确"
-        # except Exception:
-        #     self.logger.error("未捕获到alert事件")
-        #     self.logger.error(traceback.format_exc())
-        #     raise Exception
+    @allure.title("必填限制测试")
+    @allure.description("注册模块各输入项必填限制检查")
+    @allure.link("https://192.168.3.189", name="项目地址")
+    @allure.issue("https://ones.ai/project/#/team/WKcESQu7/project/4QQzma4BQ68apgNB/"
+                  "component/dj3yOhrd/view/L9GGVMSE/task/3cs3j83EHgnrqPNB/0?isHideDialog=1",
+                  name="ones bug链接")
+    @allure.testcase("https://ones.ai/project/#/testcase/team/WKcESQu7/plan/PBa7CDEg/library",
+                     name="ones case链接")
+    @pytest.mark.parametrize("username, password", test_login_data)
+    def test_login(self, username, password):
+        body = "期望值：\n username: test123 \n password: test@123" + "\n" + \
+               f"实际值: \n username: {username} \n password: {password}"
+        # allure.attach(body, "校验", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(f'<head></head><body> {body} </body>', "校验", allure.attachment_type.HTML)
 
-    # def teardown_method(self):
-    #     self.login.quit()
 
 
 if __name__ == '__main__':

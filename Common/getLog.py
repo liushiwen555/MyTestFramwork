@@ -7,6 +7,7 @@ import os.path
 import traceback
 from Common.getConfig import Config
 
+
 class SetLog(object):
     level_relations = {
         'debug': logging.DEBUG,
@@ -16,9 +17,8 @@ class SetLog(object):
         'critical': logging.CRITICAL
     }
 
-    def __init__(self,level='info'):
+    def __init__(self, level='info'):
         """
-
         :param level:
         """
         if level in ['debug', 'info', 'warning']:
@@ -38,9 +38,9 @@ class SetLog(object):
         """
         设置格式器
         """
-        self.formatter1 = logging.Formatter(fmt="%(asctime)s ==> %(filename)s ==> %(levelname)s ==> %(message)s")
-        self.formatter2 = logging.Formatter(fmt="%(asctime)s : %(filename)s : %(levelname)s : %(message)s")
-        return self.formatter1, self.formatter2
+        formatter1 = logging.Formatter(fmt="%(asctime)s ==> %(filename)s ==> %(levelname)s ==> %(message)s")
+        formatter2 = logging.Formatter(fmt="%(asctime)s : %(filename)s : %(levelname)s : %(message)s")
+        return formatter1, formatter2
 
     def setStreamHandle(self):
         """创建控制台处理器,将控制台处理器添加进日志器,控制台处理器设置日志级别,设置日志打印格式"""
@@ -94,5 +94,5 @@ if __name__ == '__main__':
             log.error(traceback.format_exc())
             # logger.info("weishahuiliangci")
     func(1, 2)
-    func("hello","python")
+    func("hello", "python")
 

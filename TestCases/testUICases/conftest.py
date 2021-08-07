@@ -21,7 +21,8 @@ def user_register_page():
     register.quit()
     logger.info("退出浏览器")
 
-# @pytest.fixture(scope="function")
+
+
 
 
 
